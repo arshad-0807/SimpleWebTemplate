@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Sono:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+header div i {
+    color: #d3d1d1;
+    padding: 0.5rem;
+}
+.call {
+    color: rgb(108, 200, 108);
+    margin-right: 5px;
+}
+header div a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 3px;
+    background-color: rgb(108, 200, 108);
+    padding: 5px;
+    margin-left: 1rem;
+    border: none;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: orange;
+}
+
+/* --------------------------Navbar Starts Here--------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Sono', sans-serif;
+    font-size: 2rem;
+}
+
+.nav-links ul  {
+    list-style: none;
+
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 0.5rem;
+    /* margin-right: 0.5rem; */
+    
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222;
+    /* font-weight: bold; */
+    /* font-size: 1.2rem; */
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Sono', sans-serif;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orange;
+    margin: auto;
+    display: block;
+    transition: 1s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.fa {
+    display: none;
+}
+
+.main {
+   background: url(images/banner.jfif);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   position: relative;
+}
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main h1 {
+    font-size: 4rem;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Sono', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.main p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* -------------------------Advantages starts here------------------------ */
+
+.advantages {
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    width: 90%;
+}
+
+.advantages h1 span {
+    color: rgb(140 224 14);
+}
+.advantages h1 {
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.advantages p {
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.icon-col .fa-solid {
+    font-size: 4rem;
+    border-radius: 50%;
+}
+.icon-col {
+    margin-top: 20px;
+}
+
+.icon-col .fa-solid {
+    background: #E1DFE9;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    vertical-align: middle;
+    padding: 18px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.icon-col h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.adv-icons {
+    margin-top: 20px;
+}
+
+
+.about {
+    
+    background: #e9e2e2;
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.about h1 span {
+    color: rgb(140 224 14);
+}
+.about p {
+    font-size: 1rem;
+    margin-top: 18px;
+    padding: 1rem;
+}
+
+.services {
+    width: 90vw;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 80px
+}
+
+.services h1 {
+    font-size: 2.5rem;
+}
+
+.services h1 span {
+    color: rgb(140 224 14);
+}
+
+.services p {
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.services-content {
+    margin-top: 40px;
+}
+
+.service-col {
+    background: #eff5ef;
+    border-radius: 10px;
+    
+    text-align: center;
+    flex-basis: 23%;
+    
+    
+    margin-bottom: 10%;
+    
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.service-col .fa-star {
+    background: darkorange;
+    color: orangered;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    /* line-height: 100px; */
+    vertical-align: middle;
+    padding: 18px;
+    position: relative;
+    top: -45px;
+    font-size: 20px;
+}
+
+.service-col h2 {
+    font-size: 18px;
+}
+
+.service-col p {
+    font-size: 10px;
+}
+
+.service-col a{
+    text-decoration: none;
+    color: rgb(140 224 14);
+    font-size: 12px;
+}
+
+/* -----------------------------------[PORTFOLIO]-------------------------- */
+
+.portfolio {
+    width: 90vw;
+    background: #222;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+.portfolio h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.portfolio h1 span {
+    color: rgb(140 224 14);
+}
+
+.portfolio p {
+    color: #E1DFE9;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.links {
+    width: 60vw;
+    margin: auto;
+}
+
+.links ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.links ul li a:hover {
+    color: darkorange;
+}
+.gallery {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200p;
+    object-fit: cover;
+}
+
+/* ----------------------process----------------- */
+
+.process {
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.process h1 {
+    font-size: 2.5rem;
+    
+}
+.process h1 span {
+    color: rgb(140 224 14);
+}
+.process p {
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.process-col .fa-solid {
+    background: #E1DFE9;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 90px;
+    vertical-align: middle;
+    padding: 18px;
+    font-size: 2.5rem;
+}
+
+.process-col h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.process-col p {
+    margin-top: 10px;
+}
+
+.process-col {
+    padding: 2rem;
+}
+
+/* ===================================SKILLS+++++++++++++++++++++ */
+
+.skills {
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.skills h1{
+    font-size: 2.5rem;
+}
+
+.skills h1 span {
+    color: rgb(140 224 14);
+}
+
+.skills p {
+    color: #555;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skill-content {
+    margin-top: 50px;
+}
+.skill-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------contact-------------------------- */
+
+.cta {
+    width: 100vw;
+    margin: 100px auto;
+    background-image: url(images/banner.jfif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.form {
+    width: 100vw;
+    box-sizing: content-box;
+}
+form .place {
+    padding: 7px 9px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+    
+}
+
+#btn {
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background: orange;
+}
+
+.cta p{
+    margin-top: 20px;
+    color: #eff5ef;
+}
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer div {
+    text-align: center;
+}
+.col-2 {
+    flex-grow: 2;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
